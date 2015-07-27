@@ -248,7 +248,7 @@ namespace GTA_V_Scripting_Extensions
 		{
 			memset(calladdr, 0x90, 5);
 			memcpy(title, windowTitle.c_str(), windowTitle.size() * sizeof(wchar_t) + sizeof(wchar_t));
-			GAMEPLAY::DISPLAY_ONSCREEN_KEYBOARD(0, "CELL_EMAIL_BOD", "", "", "", "", "", 500);
+			GAMEPLAY::DISPLAY_ONSCREEN_KEYBOARD(p0, "CELL_EMAIL_BOD", p2, defaultText, defaultConcat1, defaultConcat2, defaultConcat3, maxInputLength);
 			memcpy(calladdr, bytes, 5);
 		}
 	};
